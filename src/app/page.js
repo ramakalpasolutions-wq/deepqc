@@ -67,11 +67,11 @@ export default function Home() {
                     background: "linear-gradient(90deg,#4da3ff,#9bc9ff)",
                     WebkitTextFillColor: "transparent",
                     WebkitBackgroundClip: "text",
-                    textAlign:'justify'
+                    textAlign:'left'
                   }} 
                   className="tracking-tight"
                 >
-                  DeepQ is redefining<br/>
+                  DeepQ is Redefining<br/>
                   how "Service Businesses" Run!.
                 </h1>
 
