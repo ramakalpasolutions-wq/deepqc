@@ -58,10 +58,10 @@ export default function Home() {
           <div className="glass px-6 md:px-10 lg:px-14 py-8 md:py-10 lg:py-12 shadow-2xl">
             <div className="space-y-10">
               {/* HERO TEXT */}
-              <section className="max-w-3xl space-y-4 text-left">
+              <section className="max-w-3xl space-y-4 text-left" >
                 <h1 
                   style={{ 
-                    fontSize: 'var(--fs-lg)', 
+                    fontSize: '50px', 
                     fontWeight: 700, 
                     lineHeight: 1.3,
                     background: "linear-gradient(90deg,#4da3ff,#9bc9ff)",
@@ -70,12 +70,13 @@ export default function Home() {
                   }} 
                   className="tracking-tight"
                 >
-                  DeepQ is <span className="font-bold">redefining</span> how service businesses run.
+                  DeepQ is redefining<br/>
+                  how service businesses run.
                 </h1>
 
                 <p 
                   style={{ 
-                    fontSize: 'var(--fs-sm)',
+                    fontSize: '23px',
                     color: "#9fc9ff", 
                     lineHeight: 1.6 
                   }} 
@@ -108,7 +109,7 @@ export default function Home() {
                       type="submit"
                       disabled={loading}
                       style={{ fontSize: 'var(--fs-sm)' }}
-                      className="h-14 px-7 md:px-9 rounded-full bg-[var(--neon-blue)] hover:bg-[var(--neon-glow)] font-semibold text-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="btn ghost"
                     >
                       {loading ? 'Sending...' : 'Notify Me'}
                     </button>

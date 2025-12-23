@@ -6,6 +6,7 @@
     --background: #050712;
     --foreground: #a0aec0;
     --neon-blue: #4da3ff;
+    --accent: #4da3ff;
     --neon-glow: #008cff;
     /* --card-bg: rgba(15, 23, 42, 0.96); */
     --card-bg: transparent(15, 23, 42, 0.96);
@@ -35,4 +36,20 @@
     border-radius: 28px;
     border: 1px solid rgba(148, 163, 184, 0.4);
   }
+}
+.btn.ghost {
+  border: 2px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+}
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
 }
