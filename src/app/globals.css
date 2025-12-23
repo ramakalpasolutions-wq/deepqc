@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+
+@layer base {
+  :root {
+    --background: #050712;
+    --foreground: #a0aec0;
+    --neon-blue: #4da3ff;
+    --neon-glow: #008cff;
+    /* --card-bg: rgba(15, 23, 42, 0.96); */
+    --card-bg: transparent(15, 23, 42, 0.96);
+
+
+    --fs-lg: clamp(26px, 3vw, 40px);
+    --fs-md: clamp(16px, 2vw, 22px);
+    --fs-sm: clamp(13px, 1.6vw, 18px);
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #111827 0, #020617 55%, #000 100%);
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+}
+
+@layer utilities {
+  .bg-background { background-color: var(--background); }
+  .text-foreground { color: var(--foreground); }
+  .glass {
+    background: var(--card-bg);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 28px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+  }
+}
