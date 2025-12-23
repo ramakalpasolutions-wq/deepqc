@@ -67,18 +67,21 @@ export default function Home() {
                     background: "linear-gradient(90deg,#4da3ff,#9bc9ff)",
                     WebkitTextFillColor: "transparent",
                     WebkitBackgroundClip: "text",
+                    textAlign:'justify'
                   }} 
                   className="tracking-tight"
                 >
                   DeepQ is redefining<br/>
-                  how service businesses run.
+                  how "Service Businesses" Run!.
                 </h1>
 
                 <p 
                   style={{ 
                     fontSize: '23px',
                     color: "#9fc9ff", 
-                    lineHeight: 1.6 
+                    lineHeight: 1.6, 
+                    textAlign: "justify",
+                    marginTop: "40px"
                   }} 
                   className="text-foreground max-w-2xl"
                 >
